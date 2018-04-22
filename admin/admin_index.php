@@ -1,7 +1,25 @@
 <?php
 require_once('phpscripts/config.php');
  confirm_logged_in();
- first_log();
+
+ date_default_timezone_set('America/Toronto');
+ $time = date('H:m:s');
+ $morning = date("12:00:00");
+ $noon = date("15:00:00");
+ $night = date("23:00:00");
+
+ if($time<$morning)
+ {
+   $welcome = "Good Morning";
+ }
+
+ elseif($time<$noon){
+   $welcome = "Good Afternoon";
+ }
+
+ else{
+   $welcome = "Good Evening";
+ }
 
  ?>
 
@@ -25,7 +43,8 @@ require_once('phpscripts/config.php');
     <section class="login-box">
     <div class="center-2">
         <?php
-        echo "<h1> Hello {$_SESSION['user_name']}!</h1>";
+        echo "<h1>{$welcome} {$_SESSION['user_name']}!</h1>";
+
         echo "<p> Your last log in was on : {$_SESSION['user_date']}</p>";
 
         ?>

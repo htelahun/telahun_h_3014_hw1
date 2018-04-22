@@ -17,12 +17,12 @@ function logged_out(){
 
 
 //link to function in admin_index.php, sends you to the index page if you kill the browser then sign in again
-function first_log(){
-    if (!isset($_SESSION['FirstVisit'])) {
-
-    $_SESSION['FirstVisit'] = 1;
-    redirect_to("admin_edit.php");
-
-  }
-}
+// function first_log(){
+//     if (!isset($_SESSION['FirstVisit'])) {
+//
+//     $_SESSION['FirstVisit'] = 1;
+//     redirect_to("admin_edit.php");
+//
+//   }
+// }
  ?>
