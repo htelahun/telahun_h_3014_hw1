@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 22, 2018 at 05:06 AM
+-- Generation Time: Apr 22, 2018 at 05:16 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -43,7 +43,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_level`, `user_ip`, `user_attempts`) VALUES
-(1, 'hana', 'hana', '123', 'hana@gmail.com', '2018-04-22 02:46:32', '', '::1', 4);
+(1, 'hana', 'hana', '123', 'hana@gmail.com', '2018-04-22 03:14:42', '', '::1', 0);
 
 --
 -- Indexes for dumped tables
